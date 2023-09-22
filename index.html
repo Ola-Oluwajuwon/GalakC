@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GalakC</title>
+
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./jQuery_and_Plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="../../fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.css"
+    /> -->
+
+    <!-- CDN for jQuery and Isotope -->
+    <!-- <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script> -->
+  </head>
+  <body>
+    <!-- NavBar Starts -->
+    <nav
+      class="navbar navbar-expand-lg bg-primary fixed-top"
+      data-bs-theme="dark"
+      style="height: auto"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-primary"
+          href="#"
+          style="
+            font-family: var(--serif-font);
+            font-weight: 600;
+            font-size: var(--lg-font);
+          "
+        >
+          <img
+            src="../Assets/imgs/GalakC_Project/astronaut-g16663afdd_640.png"
+            alt="page logo"
+            width="40"
+            height="40"
+            class="d-inline-block align-text-center rounded-circle"
+          />
+          GalakC</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end bg-primary"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3"
+              id="navbar-a"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">The Sun</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Star">The Stars</a>
+              </li>
+              <li class="nav-item">
+                <a href="#moon" class="nav-link">The Moon</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#planets"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >The Planets</a
+                >
+                <ul class="dropdown-menu bg-primary">
+                  <li><a href="#earth" class="dropdown-item">Mars</a></li>
+                  <li><a href="#earth" class="dropdown-item">Venus</a></li>
+                  <li><a href="#earth" class="dropdown-item">Earth</a></li>
+                  <li><a href="#earth" class="dropdown-item">Mercury</a></li>
+                  <li><a href="#earth" class="dropdown-item">Jupiter</a></li>
+                  <li><a href="#earth" class="dropdown-item">Saturn</a></li>
+                  <li><a href="#earth" class="dropdown-item">Uranus</a></li>
+                  <li><a href="#earth" class="dropdown-item">Neptune</a></li>
+                  <li><a href="#earth" class="dropdown-item">Pluto</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar Ends -->
+
+    <!-- Header Starts -- Page Banner -->
+    <header id="header" style="margin-top: 3.8em" class="overflow-x-hidden">
+      <div
+        class="container-fluid position-relative"
+        banner-galakc="page-banner"
+      >
+        <!-- Heading -->
+        <div
+          class="container-fluid position-absolute text-light py-2 text-center blur-background"
+        >
+          <h1 class="display-2">Galaxy Fun Facts and Quotes</h1>
+        </div>
+
+        <!-- This Section consumes APIs to create its content -->
+        <div
+          class="container-fluid position-absolute text-light blur-background w-75 h-auto"
+          style="top: 25%; left: 10%"
+        >
+          <div class="card text-light" style="background: transparent">
+            <div class="card-header border-bottom">
+              <cite>Quotes about &lt;Galaxy&gt;</cite>
+            </div>
+
+            <div class="card-body">
+              <q>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                tempore expedita tempora dolores quia eius atque ipsa explicabo
+                dolorem voluptatibus.
+              </q>
+            </div>
+
+            <div class="card-footer border-top text-end">
+              <address><em>Lorem Ipsum</em></address>
+            </div>
+          </div>
+        </div>
+
+        <!-- News Carousel -->
+        <div
+          class="container position-absolute text-light py-4 blur-background text-end"
+          style="bottom: 0; right: 0"
+        >
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+            facere.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- Header Ends -- Page Banner -->
+
+    <main>
+      <!-- Featured Articles Starts Here -->
+      <section
+        id="feature-articles"
+        class="container-lg bg-deep-dark text-light px-4 py-5"
+        style="margin-top: 1em"
+      >
+        <!-- The First Row Clsass -- for the Article and the Aside -->
+        <div id="flex__one" class="d-flex gap-4 full__width-mobile-altered">
+          <article class="col-9 px-5" data-resize="small-screens">
+            <!-- The Second Row Class in this Section -- for the Article Heading and the Sub-Row Container -->
+            <div class="d-flex flex-column">
+              <!-- The Article Heading -->
+              <div
+                class="col-12 pt-2 bg-primary px-4 rounded text-primary img-thumbnail border border-3 increase__width"
+                style="border-color: var(--brand-text-color) !important"
+              >
+                <h1
+                  id="featured__articles-heading"
+                  class="display-3 text-uppercase font-monospace position-relative bar__cursor-heading"
+                >
+                  Featured Articles
+                </h1>
+              </div>
+
+              <!-- The Inner Container for Row -->
+              <div class="col-12 pt-4 increase__width">
+                <!-- The Third Row in this Section --for Two Unequal Thumbnails -->
+                <!-- These Thumbnails will Stack in Column on Small Devices -->
+                <div id="medium-container" class="d-flex gap-4">
+                  <div
+                    class="col-md-6"
+                    style="height: auto"
+                    data-resize="small-screens"
+                  >
+                    <a
+                      href="#placeholder"
+                      target="_blank"
+                      class="h-100 px-5 position-relative img-thumbnail border border-3 d-block"
+                      data-hover-effect="anchor"
+                      style="border-color: var(--brand-text-color) !important"
+                    >
+                      <div
+                        class="position-absolute bg-primary px-4 pt-2 rounded"
+                        style="top: 2vh; right: 2vh; z-index: 99"
+                      >
+                        <h2 class="fs-4 text-uppercase text-primary">
+                          The Solar System
+                        </h2>
+                      </div>
+
+                      <div
+                        class="position-absolute"
+                        style="
+                          top: 0;
+                          left: 0;
+                          width: fit-content;
+                          height: 100%;
+                        "
+                      >
+                        <img
+                          src="./imgs/GalakC_Project/solar-system-1018038_1920.png"
+                          alt="The Solar System"
+                          class="h-100 d-block border border-3"
+                          style="object-position: -15.8rem"
+                          data-resize="small-screens"
+                        />
+                      </div>
+
+                      <div
+                        class="position-absolute w-100 text-primary px-4 py-2"
+                        style="bottom: 0; left: 0"
+                        data-div-with-opacity="background"
+                      >
+                        <p>
+                          <span class="text-light fs-5">Jan 12, 2023</span>
+                          <span class="diamond"></span>
+                          <span class="text-light fs-5">8 min read</span>
+                        </p>
+                        <h4 class="fs-2">Article Title Goes Here...</h4>
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-md-6">
+                    <!-- The Fourth Row this Section --- for the Two Equal Thumbnails -->
+                    <div class="d-flex flex-column">
+                      <a
+                        href="#placeholder"
+                        target="_blank"
+                        class="position-relative img-thumbnail border border-3 mb-4 p-0"
+                        data-hover-effect="anchor"
+                        style="border-color: var(--brand-text-color) !important"
+                      >
+                        <div
+                          class="position-absolute bg-primary px-4 pt-2 rounded"
+                          style="top: 2vh; right: 2vh; z-index: 99"
+                        >
+                          <h2 class="fs-4 text-uppercase text-primary">
+                            The Solar System
+                          </h2>
+                        </div>
+
+                        <div
+                          class="posititon-absolute"
+                          style="top: 0; left: 0; width: 100%; height: 100%"
+                        >
+                          <img
+                            src="./imgs/GalakC_Project/universe-782697_1920.jpg"
+                            alt=""
+                            style="top: 0; left: 0; width: 100%; height: 100%"
+                            class="h-100"
+                          />
+                        </div>
+
+                        <div
+                          class="position-absolute text-primary px-4 py-2 w-100"
+                          style="bottom: 0; left: 0"
+                          data-div-with-opacity="background"
+                        >
+                          <p>
+                            <span class="text-light fs-5">Jan 12, 2023</span>
+                            <span class="diamond"></span>
+                            <span class="text-light fs-5">8 min read</span>
+                          </p>
+                          <h4 class="fs-4">Article Title Goes Here...</h4>
+                        </div>
+                      </a>
+
+                      <a
+                        href="#placeholder"
+                        target="_blank"
+                        class="position-relative img-thumbnail border border-3 p-0"
+                        data-hover-effect="anchor"
+                        style="border-color: var(--brand-text-color) !important"
+                      >
+                        <div
+                          class="position-absolute bg-primary px-4 pt-2 rounded"
+                          style="top: 2vh; right: 2vh; z-index: 99"
+                        >
+                          <h2 class="fs-4 text-uppercase text-primary">
+                            The Solar System
+                          </h2>
+                        </div>
+
+                        <div
+                          class="posititon-absolute"
+                          style="top: 0; left: 0; width: 100%; height: 100%"
+                        >
+                          <img
+                            src="./imgs/GalakC_Project/solar-system_for_the_star_project.jpg"
+                            alt=""
+                            style="top: 0; left: 0; width: 100%; height: 100%"
+                            class="h-100"
+                          />
+                        </div>
+
+                        <div
+                          class="position-absolute text-primary px-4 py-2 w-100"
+                          style="bottom: 0; left: 0"
+                          data-div-with-opacity="background"
+                        >
+                          <p>
+                            <span class="text-light fs-5">Jan 12, 2023</span>
+                            <span class="diamond"></span>
+                            <span class="text-light fs-5">8 min read</span>
+                          </p>
+                          <h4 class="fs-4">Article Title Goes Here...</h4>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Latest Solar System Update Section -->
+          <aside
+            class="col-3 pt-4 bg-primary rounded text-primary img-thumbnail border border-3"
+            style="border-color: var(--brand-text-color) !important"
+          >
+            <div class="container-fluid text-center">
+              <!--Latest Article Header  -->
+              <h2 class="text-uppercase">Latest Articles</h2>
+              <div
+                class="w-25 position-relative mx-auto"
+                id="article-diamond"
+                style="height: 2px; background-color: var(--brand-text-color)"
+              ></div>
+            </div>
+
+            <!--Each Articles  -->
+            <div
+              id="aside__container-for__bigScreens"
+              class="container d-flex flex-column"
+            >
+              <div class="container-fluid mt-5 d-flex flex-column gap-4">
+                <a
+                  href="#placeholder"
+                  target="_blank"
+                  style="text-decoration: none"
+                  class="d-flex justify-content-evenly align-items-center"
+                >
+                  <div class="position-relative">
+                    <span
+                      class="position-absolute bg-primary text-light px-2 rounded-circle fs-4"
+                      style="top: -7px; left: -7px"
+                      >01</span
+                    >
+                    <img
+                      src="./imgs/GalakC_Project/saturn_for_the_star_project.jpg"
+                      alt="A Solar System Photo"
+                      class="d-block"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+
+                  <div class="fs-5">
+                    <div>
+                      <span class="text-light">Jan 12, 2023</span>
+                      <span class="diamond"></span>
+                      <span class="text-light">8 min read</span>
+                    </div>
+                    <h4 class="mt-3">Inject Article Title</h4>
+                  </div>
+                </a>
+
+                <a
+                  href="#placeholder"
+                  target="_blank"
+                  style="text-decoration: none; background-color: redd"
+                  class="d-flex justify-content-evenly align-items-center"
+                >
+                  <div class="position-relative">
+                    <span
+                      class="position-absolute bg-primary text-light px-2 rounded-circle fs-4"
+                      style="top: -7px; left: -7px"
+                      >02</span
+                    >
+                    <img
+                      src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                      alt="A Solar System Photo"
+                      class="d-block"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+
+                  <div class="fs-5">
+                    <div>
+                      <span class="text-light">Jan 12, 2023</span>
+                      <span class="diamond"></span>
+                      <span class="text-light">8 min read</span>
+                    </div>
+                    <h4 class="mt-3">Inject Article Title</h4>
+                  </div>
+                </a>
+
+                <a
+                  href="#placeholder"
+                  target="_blank"
+                  style="text-decoration: none; background-color: redd"
+                  class="d-flex justify-content-evenly align-items-center"
+                >
+                  <div class="position-relative">
+                    <span
+                      class="position-absolute bg-primary text-light px-2 rounded-circle fs-4"
+                      style="top: -7px; left: -7px"
+                      >03</span
+                    >
+                    <img
+                      src="./imgs/GalakC_Project/solar-system-414388.jpg"
+                      alt="A Solar System Photo"
+                      class="d-block"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+
+                  <div class="fs-5">
+                    <div>
+                      <span class="text-light">Jan 12, 2023</span>
+                      <span class="diamond"></span>
+                      <span class="text-light">8 min read</span>
+                    </div>
+                    <h4 class="mt-3">Inject Article Title</h4>
+                  </div>
+                </a>
+              </div>
+              <div class="container-fluid mt-5 d-flex flex-column gap-4">
+                <a
+                  href="#placeholder"
+                  target="_blank"
+                  style="text-decoration: none; background-color: redd"
+                  class="d-flex justify-content-evenly align-items-center"
+                >
+                  <div class="position-relative bg-black">
+                    <span
+                      class="position-absolute bg-primary text-light px-2 rounded-circle fs-4"
+                      style="top: -7px; left: -7px"
+                      >04</span
+                    >
+                    <img
+                      src="./imgs/GalakC_Project/solar-system-4947216_1920.png"
+                      alt="A Solar System Photo"
+                      class="d-block"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+
+                  <div class="fs-5">
+                    <div>
+                      <span class="text-light">Jan 12, 2023</span>
+                      <span class="diamond"></span>
+                      <span class="text-light">8 min read</span>
+                    </div>
+                    <h4 class="mt-3">Inject Article Title</h4>
+                  </div>
+                </a>
+
+                <a
+                  href="#placeholder"
+                  target="_blank"
+                  style="text-decoration: none; background-color: redd"
+                  class="d-flex justify-content-evenly align-items-center"
+                >
+                  <div class="position-relative">
+                    <span
+                      class="position-absolute bg-primary text-light px-2 rounded-circle fs-4"
+                      style="top: -7px; left: -7px"
+                      >05</span
+                    >
+                    <img
+                      src="./imgs/GalakC_Project/saturn-11620.jpg"
+                      alt="A Solar System Photo"
+                      class="d-block"
+                      width="70"
+                      height="70"
+                    />
+                  </div>
+
+                  <div class="fs-5">
+                    <div>
+                      <span class="text-light">Jan 12, 2023</span>
+                      <span class="diamond"></span>
+                      <span class="text-light">8 min read</span>
+                    </div>
+                    <h4 class="mt-3">Inject Article Title</h4>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- <button
+              type="button"
+              class="btn btn-primary"
+              style="position: absolute; bottom: calc(2%); left: calc(2%)"
+            >
+              Read More
+            </button> -->
+          </aside>
+        </div>
+      </section>
+      <!-- Featured Articles Ends Here -->
+
+      <!-- The Why Section Starts Here -->
+      <section class="container mt-5" id="about-solar-system">
+        <h2
+          class="text-primary text-uppercase display-3 position-relative bar__cursor-heading"
+        >
+          Why Learn About the Solar System?
+        </h2>
+
+        <div
+          id="carouselForTheWhySection"
+          class="carousel slide carousel-fade mt-4"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner text-primary">
+            <div
+              class="carousel-item active position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title One</h1>
+                <p class="text-light">Lorem ipsum dolor sit amet...</p>
+              </div>
+            </div>
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Two</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Three</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Four</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Five</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Six</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur...
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item position-relative"
+              data-for-transparent="background"
+            >
+              <div class="center-wrapper position-absolute">
+                <h1>Add Title Seven</h1>
+                <p class="text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Why Section Ends Here -->
+
+      <!-- The Collection Section Starts Here -->
+      <section id="collection" class="py-5 mt-5">
+        <div class="container">
+          <h2
+            class="text-primary text-uppercase position-relative display-3 bar__cursor-heading"
+          >
+            Collections
+          </h2>
+
+          <div class="roww">
+            <div
+              class="d-flex flex-wrap justify-content-center mt-5 filter-button-group"
+            >
+              <button
+                type="button"
+                data-filter="*"
+                class="btn-primary m-2 active-filter-btn"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                data-filter=".s-books"
+                class="btn-primary m-2"
+              >
+                Science Books
+              </button>
+
+              <button
+                type="button"
+                data-filter=".f-books"
+                class="btn-primary m-2"
+              >
+                Fiction Books
+              </button>
+              <button
+                type="button"
+                data-filter=".movies"
+                class="btn-primary m-2"
+              >
+                Fiction Movies
+              </button>
+            </div>
+
+            <div class="collection_list mt-5 row gy-4">
+              <div class="col-xl-3 col-lg-4 col-md-6 s-books">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/I am the solar system.jpg"
+                    alt="I am the solar system book cover"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span
+                      ><span>I am the Solar System</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>Rebecca and McDonald</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>2020</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 movies">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/220px-Deep_Impact_poster.jpg"
+                    alt="Deep Impact theatrical poster"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span><span>Deep Impact</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>Bruce Joel Rubin</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>1998</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 s-books">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/13 planets.jpg"
+                    alt="The thirteen planets book cover"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span
+                      ><span
+                        >13 Planets: The Latest View of the Solar System</span
+                      >
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>David A. Aguilar</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>2011</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 f-books">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/220px-Nova(1stEd).jpg"
+                    alt="Nova book cover"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3><span class="fs-5">Title: </span><span>Nova</span></h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>Samuel R. Delany</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>1968</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 f-books">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/The_Memory_of_Whiteness_(Kim_Stanley_Robinson_novel)_cover.jpg"
+                    alt="The Memory of Whiteness theatrical poster"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span
+                      ><span>The Memory of Whiteness</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>Kim Stanley Robinson</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>1985</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 movies">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/VerdensUndergangPoster.jpg"
+                    alt="The End of the World theatrical poster"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span
+                      ><span>The End of the World</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span><span>Otto Rung</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>1916</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 movies">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/220px-Coherence_2013_theatrical_poster.jpg"
+                    alt="Coherence 2013 theatrical poster"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span><span>Coherence</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span
+                      ><span>James Ward Byrkit</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>2013</span></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 s-books">
+                <div class="collection-img position-relative">
+                  <img
+                    src="./imgs/GalakC_Project/Learn_about_space_Goss_Castle.jpg"
+                    alt="Learn about space book cover"
+                    class="w-100"
+                  />
+                  <div
+                    class="overlay position-absolute w-100 h-100 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h3>
+                      <span class="fs-5">Title: </span
+                      ><span>Learn About Space</span>
+                    </h3>
+                    <p>
+                      <span class="fs-5">Author: </span><span>Goss Castel</span>
+                    </p>
+                    <p><span class="fs-5">Year: </span><span>2022</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Collection Section Ends Here -->
+
+      <!-- Quick Read Section Starts Here -->
+
+      <!-- This is a Code along Section. Make Necessary Changes to Fit your Purpose. -->
+      <section class="quick-read mt-5" id="quick-read">
+        <div class="container">
+          <h2
+            class="text-primary text-uppercase display-3 mb-4 position-relative bar__cursor-heading"
+          >
+            Quick Read
+          </h2>
+
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <a href="#href" class="swiper-slide position-relative">
+                <img
+                  src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+
+              <a href="#href" class="swiper-slide">
+                <img
+                  src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+
+              <a href="#href" class="swiper-slide">
+                <img
+                  src="./imgs/GalakC_Project/astronaut-g16663afdd_640.png"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+
+              <a href="#href" class="swiper-slide">
+                <img
+                  src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+
+              <a href="#href" class="swiper-slide">
+                <img
+                  src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+
+              <a href="#href" class="swiper-slide">
+                <img
+                  src="./imgs/GalakC_Project/planet-3281830_1280.jpg"
+                  alt="Swiper Image Slide One"
+                  class=""
+                />
+
+                <div class="swiper-data-container position-absolute w-100 p-3">
+                  <div class="article-data">
+                    <span>Jan 24th, 2023</span>
+                    <span class="diamond"></span>
+                    <span>8 min read</span>
+                  </div>
+
+                  <h3 class="article-title">Is VR the Future?</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-button-prev swiper-controls"></div>
+            <div class="swiper-button-next swiper-controls"></div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Quick Read Section Ends Here -->
+
+      <!-- The Newsletter Subscription Section Starts Here -->
+
+      <section class="py-5 mt-5" id="transparent__newsletter">
+        <div
+          id="transparent__newsletter-child"
+          class="container text-primary py-5 px-4 rounded"
+        >
+          <h2
+            class="display-3 text-uppercase position-relative bar__cursor-heading"
+          >
+            Newsletter
+          </h2>
+
+          <div class="w-50 mx-auto full__width-mobile">
+            <h3 class="fs-1 text-center mb-3">Join GalakC Mailing List</h3>
+            <p class="text-center mb-4 text-light">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+              voluptatibus! Lorem ipsum dolor sit amet.
+            </p>
+
+            <form action="#submit__form-url">
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Enter Your Email Here..."
+                  name="email"
+                  class="form-control py-3 fs-4 bg-secondary text-primary"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="input-group-text fs-4 py-3 px-5 bg-primary text-primary"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- The Newsletter Subscription Section Ends Here -->
+    </main>
+
+    <!-- The Footer Starts Here -->
+    <footer class="bg-primary text-primary py-5 px-2">
+      <div class="container">
+        <div class="row border-bottom" style="border-color: #007aff !important">
+          <div class="col-md-9 col-lg-6">
+            <h3 class="position-relative bar__cursor-heading display-3">
+              GalakC
+            </h3>
+            <p class="w-75 text-light" id="for__media-query">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+              inventore ad quia id obcaecati molestiae fugit voluptatibus non
+              nisi necessitatibus?
+            </p>
+
+            <ul class="d-flex gap-4 ps-0 fs-2">
+              <li>
+                <a href="#here"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+
+              <li>
+                <a href="#sociallink"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+
+              <li>
+                <a href="#sociallink"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a href="#sociallink"><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-2">
+            <h3 class="text-light">On This Page</h3>
+            <ul>
+              <li>
+                <a href="#toHome">Home</a>
+              </li>
+
+              <li><a href="#feature-articles">Featured Articles</a></li>
+
+              <li><a href="#about-solar-system">About The Solar System</a></li>
+
+              <li><a href="#collection">Collections</a></li>
+
+              <li><a href="#quick-read">Quick Read</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-9 col-lg-2">
+            <h3 class="text-light">Route Website</h3>
+
+            <ul>
+              <li>
+                <a href="#toHome">Home</a>
+              </li>
+
+              <li><a href="#toTheSun">The Sun</a></li>
+
+              <li><a href="#toTheStars">The Stars</a></li>
+
+              <li><a href="#toTheMoon">The Moon</a></li>
+
+              <li><a href="#toThePlanets">The Planets</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 col-lg-2">
+            <h3 class="text-light">Contribute to Project</h3>
+
+            <ul>
+              <li><a href="#contact">Report Errors</a></li>
+              <li><a href="#authors">Write a Post</a></li>
+              <li><a href="#engineers">Developer & UI/UX</a></li>
+              <li><a href="#login">Contributors Login Here</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mt-3">Since 2023. All Rights Reserved</p>
+        <p>
+          Made with <i class="fa-solid fa-heart"></i> by
+          <a href="#link-to-portfolio" style="text-decoration: underline"
+            >Jaydroid</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- The Footer Ends Here -->
+
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+
+    <script src="./jQuery_and_Plugins/jquery-3.6.0.js"></script>
+
+    <script src="./jQuery_and_Plugins/isotope_minified.js"></script>
+
+    <script src="./jQuery_and_Plugins/swiper-bundle.min.js"></script>
+
+    <script src="/Assets/index.js"></script>
+  </body>
+</html>
