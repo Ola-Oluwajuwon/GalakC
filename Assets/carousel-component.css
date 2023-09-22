@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-100deg, rgba(29, 36, 50, 0.9), rgba(25, 36, 58, 0.2)), url(./imgs/GalakC_Project/triangles-1430105.png);
+    overflow-x: hidden;
+}
+
+
+@media screen and (max-width: 992px) {
+    #flex__one {
+        flex-direction: column;
+    }
+    #flex__one > div.col-3, #flex__one > div.col-9 {
+        width: 100%;
+    }
+     
+}
+
+@media screen and (max-width: 600px) {
+    #flex__two {
+        flex-direction: column;
+    }
+    #flex__two >div.col-5, #flex__two > div.col-6 {
+        width: 100%;
+    }
+}
